@@ -35,8 +35,8 @@ label {
   align-items: center;
   width: 270px;
   height: 320px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 /*http://stackoverflow.com/questions/8708945/how-to-position-text-over-an-image-in-css*/
 
@@ -75,8 +75,7 @@ input[type=radio] {
   display: none;
 }
 
-
-img:hover {
+img:not(.result):hover {
   border: 20px solid rgb(228, 207, 94);
   cursor: pointer;
 }
@@ -98,7 +97,8 @@ input[type=radio]:checked ~ img {
   display: flex;
   justify-content: center;
   padding: 10px;
-  margin-bottom: 90px;
+  margin-bottom: 130px;
+
 }
 
 button {
@@ -120,24 +120,50 @@ button:active {
 }
 
 #warning  {
-  display:none;
+  display: none;
   justify-content: center;
   color: rgb(241, 81, 82);
 }
 
-#result  {
-  display:none;
-  justify-content: center;
-  color: blue;
-}
-
-.result_gif {
+#result-container {
   display: flex;
   justify-content: center;
-  margin-bottom: 80px;
+  width: 100%;
+}
+#result {
+  color: rgb(13, 85, 224);
+  background-color: orange;
+  width: 400px;
+  height: 300px;
+  padding-top: 10px;
+  padding: 50px;
 }
 
-#not_extra, #a_bit_extra, #kinda_extra, #averagely_extra, #extra, #extra_extra  {
+p#result  {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.result-hide {
   display: none;
+}
+
+.result-show {
+  display: flex;
   justify-content: center;
+}
+
+.gif-hide {
+  display: none;
+}
+
+.gif-show {
+  display: flex;
+  justify-content: center;
+}
+
+
+#a-extra, #b-extra, #c-extra, #d-extra, #e-extra, #f-extra  {
+  padding: 30px;
 }

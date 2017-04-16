@@ -108,23 +108,25 @@
         <img src="img/gno.jpg" />
       </label>
 
-      <label id="q3" for="keys">
-        <input type="radio" id="keys" name="gno" value="4"/>
-        <p> Girl on Fire <br> by Alicia Keys </p>
-        <img src="img/gno.jpg" />
-      </label>
-    </div>
-
-    <div class="second_line">
-      <label id="q3" for="beyonce">
-        <input type="radio" id="beyonce" name="gno" value="6"/>
+      <label id="q3" for="queen">
+        <input type="radio" id="queen" name="gno" value="6"/>
         <p> Run the World <br> by Queen Bey </p>
         <img src="img/gno.jpg" />
       </label>
 
+    </div>
+
+    <div class="second_line">
+
       <label id="q3" for="fergie">
         <input type="radio" id="fergie" name="gno" value="5"/>
         <p> Fergalicious <br> by Fergie </p>
+        <img src="img/gno.jpg" />
+      </label>
+
+      <label id="q3" for="keys">
+        <input type="radio" id="keys" name="gno" value="4"/>
+        <p> Girl on Fire <br> by Alicia Keys </p>
         <img src="img/gno.jpg" />
       </label>
 
@@ -226,19 +228,18 @@
 
   <div id="warning">Please complete all the questions before hitting submit!</div>
 
-  <div id="submit"><button>Submit</button></div>
-
-  <div id="result"></div>
-
-  <div class=result_gif>
-    <img id="" src="img/1-extra.gif" />
-    <img id="2-extra" src="img/2-extra.gif" />
-    <img id="3-extra" src="img/3-extra.gif" />
-    <img id="4-extra" src="img/4-extra.gif" />
-    <img id="5-extra" src="img/5-extra.gif" />
-    <img id="6-extra" src="img/6-extra.gif" />
+  <div id="result-container">
+    <div id="result" class="result-hide">
+        <p> </p>
+        <div class="gif_result gif-hide" id="a-extra"><img src="img/1-extra.gif" /></div>
+        <div class="gif_result gif-hide" id="b-extra"><img src="img/2-extra.gif" /></div>
+        <div class="gif_result gif-hide" id="c-extra"><img src="img/3-extra.gif" /></div>
+        <div class="gif_result gif-hide" id="d-extra"><img src="img/4-extra.gif" /></div>
+        <div class="gif_result gif-hide" id="e-extra"><img src="img/5-extra.gif" /></div>
+        <div class="gif_result gif-hide" id="f-extra"><img src="img/6-extra.gif" /></div>
+    </div>
   </div>
-
+  <div id="submit"><button>Submit</button></div>
 
   <script
     src="https://code.jquery.com/jquery-3.2.1.min.js"
