@@ -1,9 +1,5 @@
-// $('label').click(function() {
-//         $('label').removeClass('active');
-//         $(this).addClass('checked');
-// });
-
 // modified from http://stackoverflow.com/questions/5568398/change-the-opacity-of-all-elements-except-the-one-selected
+// opaque funcionality
 $('label#q1').click(function() {
    $('label#q1').not(this).stop().animate({opacity: 0.6}, 200);
    $(this).stop().animate({opacity: 1.0}, 200);
@@ -26,6 +22,7 @@ $('label#q5').click(function() {
 });
 
 
+// when the user hits submit, execute this code
 $('#submit').on('click', function(e) {
 
   $("#result").addClass("result-show");
@@ -40,8 +37,8 @@ $('#submit').on('click', function(e) {
     return parseInt($(element).val());
   }).toArray();
 
+  // add the sum of array and convert with a range
   if (choices.length == 5)  {
-
     let score = choices.reduce((prev, val) => prev + val, 0);
     let result;
     switch(true) {
@@ -95,8 +92,6 @@ $('#submit').on('click', function(e) {
     }
 
     $('.gif_result').each(function(i, obj) {
-      console.log($(this).attr("id"));
-      console.log(gif);
       if (gif == $(this).attr("id")) {
         $(this).addClass("gif-show");
         $(this).removeClass("gif-hide");
@@ -108,12 +103,8 @@ $('#submit').on('click', function(e) {
         $(this).addClass("gif-hide");
       }
     });
-
   }
   else {
     $("#warning").css("display", "flex");
   }
-
-
-
 });
