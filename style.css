@@ -5,6 +5,7 @@ body  {
   margin: 0px;
   background-color: rgba(31, 208, 171, 0.2);
 }
+
 .title  {
   display: flex;
   justify-content: center;
@@ -52,7 +53,7 @@ p#swear  {
   padding-bottom: 85px;
 }
 
-img:not(#result_img) {
+img {
   position: absolute;
   height: 240px;
   width: 240px;
@@ -85,7 +86,7 @@ img:active {
 }
 
 input[type=radio]:checked ~ img {
-  border: 20px solid rgb(215, 194, 83);
+  border: 20px solid rgb(228, 207, 94);
   box-shadow: 5px 5px 8px rgb(35, 198, 152);
 }
 
@@ -136,6 +137,17 @@ button:active {
   height: 300px;
   padding-top: 10px;
   padding: 50px;
+}
+
+#result > p  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 280px;
+  padding: 50px;
+  margin-top: 100px;
+  background-color: rgba(0, 0, 0, 0.4);
+  cursor: none;
 }
 
 .result-hide {

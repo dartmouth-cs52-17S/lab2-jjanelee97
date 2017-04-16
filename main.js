@@ -1,5 +1,5 @@
-// modified from http://stackoverflow.com/questions/5568398/change-the-opacity-of-all-elements-except-the-one-selected
 // opaque funcionality
+// modified from http://stackoverflow.com/questions/5568398/change-the-opacity-of-all-elements-except-the-one-selected
 $('label#q1').click(function() {
    $('label#q1').not(this).stop().animate({opacity: 0.6}, 200);
    $(this).stop().animate({opacity: 1.0}, 200);
@@ -91,6 +91,7 @@ $('#submit').on('click', function(e) {
         gif = 'd-extra'
     }
 
+    // to make sure that gifs don't overlap on each other
     $('.gif_result').each(function(i, obj) {
       if (gif == $(this).attr("id")) {
         $(this).addClass("gif-show");
